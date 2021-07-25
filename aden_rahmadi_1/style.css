@@ -1,0 +1,17 @@
+#r{
+    color: coral;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 55px;
+    
+}
+table{
+    font-size: 45px ;
+}
+
+#c{
+    background-color: black;
+    padding: 30px;
+}
