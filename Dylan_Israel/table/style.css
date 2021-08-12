@@ -1,0 +1,15 @@
+td, th{
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;;
+}
+
+th{
+    font-weight: bold;
+    text-transform: uppercase;
+}
