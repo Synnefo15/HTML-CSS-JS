@@ -1,0 +1,32 @@
+body{
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+}
+
+/* *Typografi */
+
+
+/** layout */
+.container{
+    width: 95%;
+    max-width: 980px;
+    margin: 0 auto ;
+}
+
+.gambar{
+    
+}
+
+img{
+    position: relative;
+    left: 25%;
+    margin: auto;
+    width: 60%;
+    height: 20%;
+    max-width: 100%;
+}
+
+.row{
+    display: flex;
+}

@@ -1,0 +1,189 @@
+body {
+	background-color: white;
+	color: #555555;
+
+	font-family: "Poppins", sans-serif;
+	line-height: 1.6em;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+}
+
+a:hover {
+	color: goldenrod;
+}
+
+a:active {
+	color: coral;
+}
+
+a:visited {
+	/* color: darkcyan; */
+}
+
+#YT {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.box-1 {
+	background-color: violet;
+
+	border-right: 5px yellow solid;
+	border-left: 5px greenyellow solid;
+	border-top-style: double;
+	border-top-color: blue;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+#p2 {
+	font-style: italic;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	word-spacing: 1em;
+}
+
+.box-2 {
+	background-color: aquamarine;
+	border: 3px dotted tan;
+	padding: 15px;
+	margin: 20px;
+}
+
+.categories {
+	padding: 10px;
+	border: 5px solid blueviolet;
+	border-radius: 20px;
+}
+
+.categories h2 {
+	text-align: center;
+}
+
+.categories ul {
+	list-style: square;
+}
+
+.categories li {
+	padding-bottom: 3px;
+	border-bottom: 1px solid cyan;
+}
+
+.my-form {
+	padding: 20px;
+}
+
+.my-form .form-group {
+	padding-bottom: 15px;
+}
+
+.my-form label {
+	display: block;
+}
+
+.my-form input[type="text"],
+.my-form textarea {
+	padding: 8px;
+	width: 100%;
+}
+
+.button {
+	background-color: #333;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 10px;
+}
+
+.button:hover {
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.block {
+	float: left;
+	width: 33.3%;
+	border: 1px solid grey;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.block h3 {
+	text-align: center;
+}
+
+.clr {
+	clear: both;
+}
+
+#main-block {
+	float: left;
+	width: 70%;
+	box-sizing: border-box;
+
+}
+
+#sidebar {
+	float: right;
+	width: 30%;
+	background-color: chartreuse;
+	color: white;
+	padding: 15px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+
+.p-box{
+	width: 800px;
+	height: 500px;
+	border: 1px solid black;
+	margin-top: 30px;
+	position: relative;
+	background-image:url(aset/awan.jpg) ;
+	background-position: 100px 200px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.p-box h1{
+	position: absolute;
+	/* position: relative; */
+	top: 120px;
+	left: 100px;
+}
+
+.p-box h2{
+	position: absolute;
+	bottom: 10px;
+	right: 50px;
+}
+
+.fix-me{
+	position: fixed;
+	top: 400px;
+}
+
+.my-list li:first-child{
+	background: red;
+}
+
+.my-list li:last-child{
+	background: blueviolet;
+}
+
+.my-list li:nth-child(5){
+	background: goldenrod;
+}
+
+.my-list li:nth-child(even){
+	background: gray;
+}
