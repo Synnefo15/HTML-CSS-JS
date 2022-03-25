@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Ubuntu:wght@300;700&display=swap");
+
+body {
+	font-family: "Ubuntu", sans-serif;
+	margin: 0;
+	font-size: 1.125rem;
+}
+
+/* *===== Typografi =======*/
+h1,
+h2,
+h3 {
+	font-family: "Lora", serif;
+	font-weight: 400;
+	color: grey;
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 2rem;
+	margin: 0;
+}
+
+a {
+	color: #178;
+}
+
+a:hover,
+a:focus {
+	color: turquoise;
+}
+
+.subtitle {
+	font-weight: 700;
+	color: darkgray;
+	font-size: 0.75rem;
+	margin: 0;
+}
+
+.article-title {
+	font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+	font-size: 0.875rem;
+}
+
+.article-info{
+	margin: 2em 0;
+}
+
+.article-read-more {
+	color: skyblue;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+	color: #1792d2;
+	text-decoration: underline;
+}
+
+/* *===== Layout =======*/
+.container {
+	width: 90%;
+	max-width: 900px;
+	/* border: 1px solid blue; */
+	margin: 0px auto;
+}
+
+.container-nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0px;
+	flex-direction: column;
+
+}
+
+header {
+	padding: 2em 0;
+	text-align: center;
+}
+
+/* main {
+	width: 70%;
+}
+
+aside {
+	width: 20%;
+} */
+
+/* *===== Navi =======*/
+nav ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	justify-content: center;
+}
+
+nav li {
+	margin-left: 2em;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+	font-weight: bolder;
+	text-transform: uppercase;
+	padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+	color: gray;
+	text-decoration: underline;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+
+
+/** Article */
+.article-featured{
+	border-bottom: black 1px solid;
+	padding-bottom: 1em;
+	/* background-color: palevioletred; */
+	margin-bottom: 2em;
+}
+
+.article-recent{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2em;
+}
+/* % ngatur urutan yg muncul dulu*/
+.article-recent-main{
+	order: 2;
+}
+.article-recent-secondary{
+	order: 1;
+}
+
+/* *===== Media, Mobile First =======*/
+@media (min-width:675px){
+	
+
+	.container-nav{
+		flex-direction: row;
+	}
+	main{
+		width: 70%;
+	}
+	aside{
+		width: 20%;
+	}
+	/* & Ngatur artikel */
+	.article-recent{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.article-recent-main{
+		width: 68%;
+	}
+	.article-recent-secondary{
+		width: 30%;
+	}
+	.article-image{
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+	}
+}

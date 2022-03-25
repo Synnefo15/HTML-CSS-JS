@@ -1,0 +1,87 @@
+body {
+	font-size: 1.125rem;
+	color: #707070;
+	margin: 0;
+}
+.row {
+	/*/parent*/
+	display: flex;
+	margin: 1em 0;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+
+
+/* *Typografi */
+h1 {
+	font-size: 3rem;
+	color: #212614;
+	text-align: center;
+}
+h1 span {
+	color: #b7832f;
+}
+h2 {
+	font-size: 1.5rem;
+}
+p {
+	margin-top: 0;
+}
+
+/** layout */
+.container {
+	width: 95%;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.gambar {
+}
+
+img {
+	position: relative;
+	left: 25%;
+	margin: auto;
+	width: 60%;
+	height: 20%;
+	max-width: 100%;
+}
+
+.col-1 {
+	width: 20%;
+}
+
+.col-2 {
+	width: 45%;
+}
+.col-3 {
+	width: 70%;
+}
+
+
+
+.col-bg {
+	background-color: #212614;
+	color: white;
+	padding: 0.5em;
+}
+
+/* # harus diurutkan dari yg besar kalo max-width, dan sebaliknya */
+/* # hrs ditaruh paling bawah */
+@media (min-width: 426px) and (max-width: 768px) /*and (orientation: landscape) */ {
+	.row {
+		flex-direction: column;
+	}
+	.col-1,
+	.col-2,
+	.col-3 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 50px) and (max-width: 425px) {
+	body {
+		background-color: purple;
+	}
+}
